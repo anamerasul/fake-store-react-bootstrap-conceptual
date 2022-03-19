@@ -7,7 +7,7 @@ import Card from 'react-bootstrap/Card'
 const card = () => {
     return (
         <div>
- <Row xs={1} md={2} className="g-4">
+ {/* <Row xs={1} md={2} className="g-4">
   {Array.from({ length: 4 }).map((_, idx) => (
     <Col>
       <Card>
@@ -22,7 +22,17 @@ const card = () => {
       </Card>
     </Col>
   ))}
-</Row> 
+</Row>  */}
+
+
+<div className="card" style={{width: "18rem"}}>
+<img src={phone} className="card-img-top img-fluid" alt="..."/>
+  <div className="card-body">
+    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+</div>
+
+
         </div>
     );
 };
